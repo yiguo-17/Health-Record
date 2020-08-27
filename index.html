@@ -11,11 +11,151 @@
             <div class="header">
                 <h1>Health Record</h1>
             </div>
-            <div class="basic-info"></div>
-            <div class="medical-history"></div>
-            <div class="medication-record"></div>
-            <div class="doctor visits"></div>
+            <div class="basic-info">
+                <div class="personal">
+                   <div id="name">
+                    <section>
+                        <label for="first-name">First name:</label>
+                        <input id="first-name" type="text" name="first-name">
+                        <label class="last-name">Last name: </label>
+                        <input id="last-name" type="text" name="last-name">
+                    </section>
+                    <section class="titles">
+                        <label for="titles">Title: </label>
+                        <select name="titles" id="titles">
+                            <option></option>
+                            <option value="Dr.">Dr.</option>
+                            <option value="Miss">Miss</option>
+                            <option value="Mr.">Mr.</option>
+                            <option value="Mrs.">Mrs.</option>
+                        </select>
+                    </section>
+                   </div>
+                    <br>
+                    <section class="address">
+                        <label for="apt">Street:</label>
+                        <input id="street" type="text">
+                        <label for="city">City:</label>
+                        <input id="city" type="text">
+                        <label for="state">State:</label>
+                        <input id="state" type="text">
+                        <label for="zip">Zip Code:</label>
+                        <input id="zip" type="text">
+                    </section>
+                    <br>
+                    <section class="date of birth">
+                        <label for="DOB">Date of Birth</label>
+                        <input type="date" id = "dob">
+                    </section>
+                    <br>
+                </div>
+                <div class="contact">
+                    <section class="contact">
+                        <label for="phone">Phone No. :</label>
+                        <input id="phone" type="text">
+                        <label for="email">Email: </label>
+                        <input id="email" type="text">
+                        <br>
+                        <br>
+                        <label for="emergency">Emergency Contact :</label>
+                        <input id="e-name" type="text">
+                        <label for="emergency phone">Emergency Contact No. :</label>
+                        <input id="e-phone" type="text">
+                    </section>
+                </div>
+            </div>
+            <br><br>
+            <div class="basic health">
+                <label for="Height">Height:</label>
+                <input id="feet" type="text"><label for="feet"> feet</label>
+                <input id="inch" type="text"><label for="inch"> inch</label>
+                <br><br>
+                <label for="Weight">Weight</label>
+                <input id="weight" type="text"><label for="pounds"> lbs</label>
+                <br><br>
+                <section class="blood group">
+                    <label for="BG">Blood Group:</label>
+                    <select name="BG" id="BG">
+                        <option></option>
+                        <option value="A"> A </option>
+                        <option value="B"> B </option>
+                        <option value="AB"> AB </option>
+                        <option value="O"> O </option>
+                    </select>
+                    <select name="RH" id="Rh">
+                        <option></option>
+                        <option value="positive"> + </option>
+                        <option value="negative"> - </option>
+                    </select>
+                </section>
+            </div>
+            <div class="medical-history">
+                <div class="chronic">
+                    <h4>Chronic Condition</h4>
+                   <div id="cc" >
+                   <div id="cl">
+                    <label for=" chronic condition">Chronic Condition: </label>
+                    <input id="condition" type="text">
+                    <label for="Diagnosis">Diagnosis Time</label>
+                    <input id="start" type="month">
+                    <ul class="chronic-condition" ></ul>
+                   </div>
+                    <button type="button" class="add-one-condition">More Condition</button>
+                   </div>
+                </div>
+                <div class="Allergies">
+                    <h4>Allergies</h4>
+                    <div id="ag">
+                        <div id="al">
+                            <input id="allergy" type="text">
+                            <ul class="allergies" id="allergies"></ul>
+                        </div>
+                        <button type="button" class="add-one-allergy">More Allergies</button>
+                    </div>
+                </div>
+            </div>
+            <div class="medication-record"><h4>Medications</h4>
+                <div id="mds">
+                    <div id="ml">
+                        <label for="medication">Medication:</label>
+                        <input id="medicine" type="text">
+                        <label for="dose">Dose:</label>
+                        <input id="dose" type="text">
+                        <label for="frequency">Frequency: </label>
+                        <input id="time" type="text">
+                        <label  for="start time">Start Time</label>
+                        <input id="begin" type="month">
+                        <ul class="medications"></ul>
+                    </div>
+                    <button type="button" class="add-one-medication">More Medication</button>
+                </div>
+            </div>
+            
+            <div class="doctor visits">
+                <h4>Past Visits</h4>
+                <div id="pv">
+                    <div id="pl">
+                        <label for="department">Department: </label>
+                        <input id="department" type="text">
+                        <label for="time">Visit Time: </label>
+                        <input id="visit-time" type="month">
+                        <label for="Diagnosis">Diagnosis: </label>
+                        <input id="disease" type="text">
+                        <label for="medication">Medication: </label>
+                        <input id="prescription" type="text">
+                        <label for="test">Test: </label>
+                        <input id="test" type="text">
+                        <ul class="past-visits"></ul>
+                    </div>
+                    <button type="button" class="add-one-visit">More Visit</button>
+                    </div>
+                
+            </div>
+            <br><br>
+            
+            <button type="button" class="summit">Summit</button>
             <script src="./main.js"></script>
         </div>
+        
     </body>
 </html>

@@ -1,0 +1,50 @@
+button{
+    height: 25px;
+    margin-left: 10px;
+}
+input{
+    height: 20px;
+}
+#name{
+    display: flex;
+    flex-direction: row;
+}
+#cc{
+    display: flex;
+    flex-direction: row;
+}
+#ag{
+    display: flex;
+    flex-direction: row;
+}
+#mds{
+    display: flex;
+    flex-direction: row;
+}
+#pv{
+    display: flex;
+    flex-direction: row;
+}
+
+@media(max-width: 800px){
+  .app  {
+      display: grid;
+      grid-template-columns: 1fr;
+  }
+  .chronic-condition{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media(min-width: 801px){
+    .app  {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .medical-history{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+    }
+  }

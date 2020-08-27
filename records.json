@@ -1,0 +1,46 @@
+{
+  "patients": [
+    {
+      "chronic condition": [
+        {
+          "condition": "diabetes",
+          "diagnosisTime": "2015-01"
+        }
+      ],
+      "allergies": [
+        "peanut"
+      ],
+      "past visits": [
+        {
+          "department": "endocrinology",
+          "time": "2015-01",
+          "diagnosis": "diabetes",
+          "medication": "Glucophage",
+          "test": "Glucose Screening Test"
+        }
+      ],
+      "medications": [
+        {
+          "medication": "Glucophage",
+          "dose": "500 mg",
+          "frequency": "twice a day",
+          "startTime": "2015-01"
+        }
+      ],
+      "name": "Dr. Joe Doe",
+      "phone": "1234567890",
+      "email": "joe.d@gmail.com",
+      "date of birth": "1955-01-01",
+      "basic health": {
+        "height": "5 ft. 9 inch",
+        "weight": "155lbs",
+        "bloodGroup": "O positive"
+      },
+      "emergency contact": {
+        "name": "Jane Doe",
+        "phone": "0987654321"
+      },
+      "id": 1
+    }
+  ]
+}
